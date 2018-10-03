@@ -1,29 +1,31 @@
 <!doctype html>
-<html lang="pl">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-        <title>Damian Polewski</title>
-        <link rel="icon" href="img/icon.png">
-        <meta name="description" content="Damian Polewski">
-        <meta name="keywords" content="damian polewski, polewski">
-        <meta name="author" content="Damian Polewski">
-        <meta http-equiv="X-Ua-Compatible" content="IE=edge">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Damian Polewski">
+    <meta name="author" content="Damian Polewski">
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-        <link rel="stylesheet" href="style.css">
-        
-    </head>
-      <body>
-        <header>
-            <nav class="navbar navbar-light navbar-expand-lg nav-color">
-                
-                <a class="navbar-brand" href="#">Damian Polewski</a>
+    <title>Damian Polewski</title>
+    <link rel="icon" href="img/icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Custom Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-dark navbar-expand-md nav-color">
+            <div class="container">
+                <a id="logo" class="navbar-brand" href="#">Damian Polewski</a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu">
                     <span class="navbar-toggler-icon"></span>
@@ -45,11 +47,16 @@
                         </li>
                     </ul>
                 </div>
-            </nav>
-            <h1 class="mx-auto animated fadeInLeft delay-2s">Damian Polewski</h1>
-            <h2 class="mx-auto animated fadeInRight delay-4s">brak ambicji i motywacji</h2>
+            </div>
+        </nav>
+        <!-- Banner -->
+        <header>
+            <h1 class="animated fadeInLeft delay-2s">Damian Polewski</h1>
+            <h2 class="animated fadeInRight delay-4s">brak ambicji i motywacji</h2>
         </header>
+        <!-- Content -->
         <main>
+            <!-- Section #1 -->
             <section class="main">
                     
                 <div class="container">
@@ -67,22 +74,12 @@
                 </div>
             </section>
         </main>
-        <!-- Optional JavaScript -->
-        <script type="text/javascript">
-            // Scrolling Effect
-            $(window).on("scroll", function() {
-                if($(window).scrollTop()) {
-                    $('nav').addClass('black');
-                }
-      
-                else {
-                    $('nav').removeClass('black');
-                }
-            })
-        </script>
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-      </body>
+        
+        <!-- jQuery -->
+        <script src="js/jquery-3.3.1.js"></script>
+
+        <!-- Bootstrap JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="navshrink.js"></script>
+  </body>
 </html>
