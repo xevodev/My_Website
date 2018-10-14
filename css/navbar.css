@@ -1,7 +1,7 @@
 @media(max-width: 767px){
     .mainNav, .shrink {
         width: 100%;
-        background: white;
+        background: rgba(255, 255, 255, .94);
         transition: all ease .5s;
     }
     
@@ -41,7 +41,7 @@
 
     nav.shrink {
         transition: all ease .5s;
-        background: rgb(255, 255, 255) !important;
+        background: rgba(255, 255, 255, .94) !important;
     }
 
     nav.shrink #logo {

@@ -15,11 +15,21 @@ body{
     transform: translateX(-50%) translateY(-50%);
 }
 
+.circleImg{
+    border-radius: 50%;
+    height: 200px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
 .homePage {
+    position: relative;
     width: 100%;
-    height: 100vh;
-    background: url(../img/homePage.jpg) no-repeat 50% 80%;
-    background-size: cover;
+    height: 111vh;
+    background: url(../img/homePage.jpg) 50% 80%;
+    background-size: cover;  
+    z-index: -2;
 }
 
 .homeDiv{
@@ -30,25 +40,58 @@ body{
     letter-spacing: 5px;
     font-weight: bold;
     font-size: 40px;
-
 }
 
 section{
     position: relative;
-    text-align: center;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    box-sizing: border-box;
+    padding: 30px;
 }
 
 section.aboutMe{
-    background: rgb(78, 78, 78);
+    background: rgb(26, 26, 26);
+    height: 50vh;
+    color: white;
+}
+
+section.aboutMe:after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content:'';
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left:0;
+    transform-origin: top right;
+    transform: skewY(2.9deg);
 }
 
 section.myProjects{
     background: rgb(255, 255, 255);
+    color: black;
+}
+
+section.myProjects:after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content:'';
+    background: inherit;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left:0;
+    transform-origin: top left;
+    transform: skewY(-2.9deg);
 }
 
 section.contactMe{
-    background: rgb(78, 78, 78);
+    background: rgb(26, 26, 26);
+    color: white;
 }
+
