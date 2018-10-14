@@ -1,0 +1,58 @@
+@media(max-width: 767px){
+    .mainNav, .shrink {
+        width: 100%;
+        background: white;
+        transition: all ease .5s;
+    }
+    
+    nav #logo, nav.shrink #logo{
+        font-size: 25px;
+        font-weight: 700;
+        text-align: left;
+        transition: all ease .5s;
+        color: black;
+    }
+    
+    #mainmenu{
+        font-size: 20px;
+        font-weight: lighter;
+    }
+}
+
+@media(min-width: 768px){
+    .mainNav {
+        width: 100%;
+        background: transparent;
+        transition: all ease .5s;
+    }
+    nav #logo{
+        font-size: 25px;
+        font-weight: 700;
+        text-align: left;
+        transition: all ease .5s;
+        color: white;
+    }
+
+    nav #item{
+        font-size: 20px;
+        font-weight: lighter;
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    nav.shrink {
+        transition: all ease .5s;
+        background: rgb(255, 255, 255) !important;
+    }
+
+    nav.shrink #logo {
+        padding: 10px;
+        transition: all ease .5s;
+        color: black;
+    }
+
+    nav.shrink #item{
+        font-size: 20px;
+        font-weight: lighter;
+        color: rgba(0, 0, 0, 0.9);
+    }
+}
