@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="My Website">
     <meta name="author" content="Damian Polewski">
+    <meta name="google-site-verification" content="Jj_zZUjUEI-ZeXqxEadUemDT_QpXO8-bpJxxsudiqdU" />
 
     <title>Damian Polewski</title>
-    <link rel="icon" href="img/icon.png">
+    <link rel="icon" href="img/titleIcon.png">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -15,7 +16,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/nav.css">
 
     <!-- Custom Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
@@ -33,44 +34,62 @@
                 <div class="collapse navbar-collapse" id="mainmenu">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a id="item" class="nav-link" href="#">Home</a>
+                            <a id="item" class="nav-link" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a id="item" class="nav-link" href="#">About Me</a>
+                            <a id="item" class="nav-link" href="#about">About Me</a>
                         </li>
                         <li class="nav-item">
-                            <a id="item" class="nav-link" href="#">Projects</a>
+                            <a id="item" class="nav-link" href="#projects">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a id="item" class="nav-link" href="#">Contact</a>
+                            <a id="item" class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Home Page -->
-        <header class="homePage">
+        <section id="home" class="homePage">
             <div class="homeDiv center">
                 <h1 class="homeTitle animated fadeInLeft delay-2s">Damian Polewski</h1>
                 <h3 class="animated fadeInRight delay-4s">error 404 motivation not found</h3>
             </div>
-        </header>
+        </section>
         <!-- About Section -->
-        <section class="aboutMe">
+        <section id="about" class="aboutMe">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-12">
                         <img class="circleImg" src="img/aboutMePlaceholder.png">
                     </div>
-                    <div class="col-md-8">
-                        <h1>To ja!</h1>
-                        <p>Nazywam się Damian Polewski.</p>
+                    <div class="col-md-8 col-sm-12">
+                        <h1>Welcome to my website.</h1>
+                        <p>My name is Damian Polewski and I'm very lazy and unambtious person. I'm also a student of prestigious Technical High School for Computer Science in Oleśnica, Poland.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- First Between Section -->
+        <section class="firstBetween">              
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
                     </div>
                 </div>
             </div>
         </section>
         <!-- Projects Section -->
-        <section class="myProjects">              
+        <section id="projects" class="myProjects">              
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Second Between Section -->
+        <section class="secondBetween">              
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -79,7 +98,7 @@
             </div>
         </section>
         <!-- Contact Section -->
-        <section class="contactMe">             
+        <section id="contact" class="contactMe">             
             <div class="container">              
                 <div class="row">
                     <div class="col-12">
@@ -89,14 +108,13 @@
         </section>
         <!-- Footer -->
         <footer>
-
         </footer>
         
-        <!-- jQuery -->
-        <script src="js/jquery-3.3.1.js"></script>
-
-        <!-- Bootstrap JavaScript -->
+        <!-- jQuery and Bootstrap JS-->
+        <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/navshrink.js"></script>
+
+        <!-- Custom Scripts -->
+        <script src="js/scripts.js"></script>
   </body>
 </html>

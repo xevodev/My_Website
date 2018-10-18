@@ -17,6 +17,12 @@
         font-size: 20px;
         font-weight: lighter;
     }
+
+    nav #item{
+        font-size: 20px;
+        font-weight: lighter;
+        color: rgba(0, 0, 0, 0.9);
+    }
 }
 
 @media(min-width: 768px){
