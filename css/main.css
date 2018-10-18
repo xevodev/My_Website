@@ -16,8 +16,8 @@ body{
 }
 
 .circleImg{
-    -webkit-clip-path: polygon(0 0, 100% 5%, 100% 95%, 0% 100%);
-    clip-path: polygon(0 0, 100% 5%, 100% 95%, 0% 100%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
     height: 200px;
     position: relative;
     top: 50%;
@@ -28,19 +28,20 @@ body{
     position: relative;
     width: 100%;
     height: 111vh;
-    background: url(../img/bg-homePage.jpg) 50% 80%;
+    background: url(../img/bg-test.jpg) 50% 80%;
     background-size: cover;  
     z-index: -1;
 }
 
 .homeDiv{
-    color: white;
+    color: rgb(199, 199, 199);
 }
 
 .homeTitle{
     letter-spacing: 5px;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 50px;
+    color: #58c3ee;
 }
 
 section{
@@ -52,9 +53,9 @@ section{
 }
 
 section.aboutMe{
-    background: rgb(255, 255, 255);
+    background: rgb(6, 64, 112);
     height: 40vh;
-    color: black;
+    color: rgb(199, 199, 199);
     z-index: -1;
 }
 
@@ -98,9 +99,9 @@ section.firstBetween:after{
 }
 
 section.myProjects{
-    background: rgb(255 255, 255);
+    background: rgb(26, 26, 26);
     height: 100vh;
-    color: black;
+    color: white;
     z-index: -1;
 }
 
@@ -109,7 +110,7 @@ section.myProjects:after{
     width: 100%;
     height: 100%;
     content:'';
-    background: white;
+    background: inherit;
     z-index: -2;
     top: 0;
     right: 0;
@@ -144,8 +145,8 @@ section.secondBetween:after{
 }
 
 section.contactMe{
-    background: rgb(255 255, 255);
-    color: black;
+    background: rgb(26, 26, 26);
+    color: white;
     z-index: -1;
 }
 
@@ -154,7 +155,7 @@ section.contactMe:after{
     width: 100%;
     height: 100%;
     content:'';
-    background: white;
+    background: inherit;
     z-index: -2;
     top: 0;
     right: 0;
@@ -165,15 +166,15 @@ section.contactMe:after{
 }
 
 footer{
-    background: rgb(26, 26, 26);
+    background: rgb(12, 12, 12);
     width: 100%;
     height: 60px;
 }
 
 @media(max-width: 767px){
     section.aboutMe{
-        background: rgb(255, 255, 255);
+        background: rgb(26, 26, 26);
         height: 70vh;
-        color: black;
+        color: white;
     }
 }

@@ -1,7 +1,7 @@
 @media(max-width: 767px){
     .mainNav, .shrink {
         width: 100%;
-        background: rgba(255, 255, 255, .94);
+        background: rgba(26, 35, 44, 0.8);
         transition: all ease .5s;
     }
     
@@ -10,7 +10,7 @@
         font-weight: 700;
         text-align: left;
         transition: all ease .5s;
-        color: black;
+        color: #58c3ee;
     }
     
     #mainmenu{
@@ -21,7 +21,7 @@
     nav #item{
         font-size: 20px;
         font-weight: lighter;
-        color: rgba(0, 0, 0, 0.9);
+        color: rgba(199, 199, 199, 0.9);
     }
 }
 
@@ -36,29 +36,29 @@
         font-weight: 700;
         text-align: left;
         transition: all ease .5s;
-        color: white;
+        color: rgb(88, 195, 238);
     }
 
     nav #item{
         font-size: 20px;
         font-weight: lighter;
-        color: rgba(255, 255, 255, 0.9);
+        color: rgba(199, 199, 199, 0.9);
     }
 
     nav.shrink {
         transition: all ease .5s;
-        background: rgba(255, 255, 255, .94) !important;
+        background: rgba(26, 35, 44, 0.94) !important;
     }
 
     nav.shrink #logo {
         padding: 10px;
         transition: all ease .5s;
-        color: black;
+        color: rgb(88, 195, 238);
     }
 
     nav.shrink #item{
         font-size: 20px;
         font-weight: lighter;
-        color: rgba(0, 0, 0, 0.9);
+        color: rgba(199, 199, 199, 0.9);
     }
 }
