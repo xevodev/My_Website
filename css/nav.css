@@ -10,7 +10,7 @@
         font-weight: 700;
         text-align: left;
         transition: all ease .5s;
-        color: #58c3ee;
+        color: rgb(245, 245, 245);
     }
     
     #mainmenu{
@@ -21,7 +21,8 @@
     nav #item{
         font-size: 20px;
         font-weight: lighter;
-        color: rgba(199, 199, 199, 0.9);
+        color: rgba(245, 245, 245, 0.9);
+        float: left;
     }
 }
 
@@ -36,13 +37,13 @@
         font-weight: 700;
         text-align: left;
         transition: all ease .5s;
-        color: rgb(88, 195, 238);
+        color: rgb(245, 245, 245);
     }
 
     nav #item{
         font-size: 20px;
         font-weight: lighter;
-        color: rgba(199, 199, 199, 0.9);
+        color: rgba(245, 245, 245, 0.9);
     }
 
     nav.shrink {
@@ -53,12 +54,12 @@
     nav.shrink #logo {
         padding: 10px;
         transition: all ease .5s;
-        color: rgb(88, 195, 238);
+        color: rgb(245, 245, 245);
     }
 
     nav.shrink #item{
         font-size: 20px;
         font-weight: lighter;
-        color: rgba(199, 199, 199, 0.9);
+        color: rgba(245, 245, 245, 0.9);
     }
 }

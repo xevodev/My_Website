@@ -6,15 +6,15 @@
     <meta name="description" content="My Website">
     <meta name="author" content="Damian Polewski">
     <meta name="google-site-verification" content="Jj_zZUjUEI-ZeXqxEadUemDT_QpXO8-bpJxxsudiqdU" />
+    <meta name="theme-color" content="#1a232c">
 
     <title>Damian Polewski</title>
-    <link rel="icon" href="img/titleIcon.png">
+    <link rel="icon" href="img/titleicon.png">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/nav.css">
 
@@ -25,7 +25,7 @@
         <!-- Navigation -->
         <nav class="navbar navbar-expand-md fixed-top navbar-dark mainNav">
             <div class="container">
-                <a id="logo" class="navbar-brand" href="#">Damian Polewski</a>
+                <a id="logo" class="navbar-brand" href="http://dpolewski.pl">Damian Polewski</a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu">
                     <span class="navbar-toggler-icon"></span>
@@ -50,64 +50,93 @@
             </div>
         </nav>
         <!-- Home Page -->
-        <section id="home" class="homePage">
+        <header id="home" class="container-fluid homePage">
             <div class="homeDiv center">
-                <h1 class="homeTitle animated fadeInLeft delay-2s">Damian Polewski</h1>
-                <h3 class="animated fadeInRight delay-4s">welcome to my website</h3>
+                <h1 class="homeTitle border-bottom border-info">Damian Polewski</h1>
+                <h3>welcome to my website</h3>
+                
             </div>
-        </section>
+            <div class="readMore">
+                <a class="readMore btn btn-link" href="#about" role="button"><img src="img/down.png"></a>
+            </div>
+        </header>
         <!-- About Section -->
-        <section id="about" class="aboutMe">
+        <section id="about" class="container-fluid aboutMe">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 col-sm-12">
-                        <img class="circleImg" src="img/aboutMePlaceholder.png">
+                    <div class="col-md-3 col-sm-12 p-2">
+                        <img class="aboutMeImg rounded-circle" src="img/aboutMePlaceholder.jpg" alt="Me">
                     </div>
-                    <div class="col-md-8 col-sm-12">
-                        <h1>Welcome to my website.</h1>
-                        <p>My name is Damian Polewski and I'm very lazy and unambtious person. I'm also a student of prestigious Technical High School for Computer Science in Oleśnica, Poland.</p>
+                    <div class="col-md-9 col-sm-12 m-auto">
+                        <p>Hi! My name is Damian Polewski and I'm software and game developer from Poland. I'm also a student of Technical High School for Computer Science in Oleśnica, Poland.</p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- First Between Section -->
-        <section class="firstBetween">              
+        <section class="container-fluid firstBetween"></section>
+        <!-- Projects Section -->
+        <section id="projects" class="container-fluid myProjects">              
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 text-center">
+                        <h1 class="pb-5">Projects</h1>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- Projects Section -->
-        <section id="projects" class="myProjects">              
-            <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-md-5 col-sm-12 text-center mx-auto pb-4">
+                        <img src="img/cplusplus.png" alt="C++">
+                        <hr>
+                        <h2>Coming soon...</h2>
+                    </div>
+                    <div class="col-md-5 col-sm-12 text-center mx-auto pb-4">
+                        <img src="img/unity.png" alt="Unity">
+                        <hr>
+                        <h2>Coming soon...</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5 col-sm-12 text-center mx-auto pb-4">
+                        <img src="img/webdesign.png" alt="Web Design">
+                        <hr>
+                        <h2>Coming soon...</h2>
+                    </div>
+                    <div class="col-md-5 col-sm-12 text-center mx-auto pb-4">
+                        <img src="img/python.png" alt="Python">
+                        <hr>
+                        <h2>Coming soon...</h2>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Second Between Section -->
-        <section class="secondBetween">              
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                    </div>
-                </div>
-            </div>
-        </section>
+        <section class="container-fluid secondBetween"></section>
         <!-- Contact Section -->
-        <section id="contact" class="contactMe">             
+        <section id="contact" class="container-fluid contactMe">             
             <div class="container">              
                 <div class="row">
                     <div class="col-12">
+                        <h3 class="text-center">You can reach me via e-mail at</h3>
+                        <h3 class="text-center font-weight-bold">damian@dpolewski.pl</h3>
                     </div>
+                    <div class="col-12 text-center mt-5">
+                            <a class="btn btn-link" href="https://twitter.com/real_xevo" role="button"><img src="img/twitter.png"></a>
+                        </div>
                 </div>
             </div>
         </section>
         <!-- Footer -->
-        <footer>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="p-2">
+                            <p>Website made by Damian Polewski</p>
+                            <a href="https://icons8.com">Icon pack by Icons8</a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
         </footer>
         
         <!-- jQuery and Bootstrap JS-->

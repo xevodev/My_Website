@@ -22,6 +22,6 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     $('.collapse').collapse('hide');
 
     $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top - 60
+        scrollTop: $($.attr(this, 'href')).offset().top - 63
     }, 500);
 });

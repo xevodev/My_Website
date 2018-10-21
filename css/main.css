@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    z-index: -1;
 }
 
 .container{
@@ -15,23 +16,22 @@ body{
     transform: translateX(-50%) translateY(-50%);
 }
 
-.circleImg{
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
-    height: 200px;
+section{
     position: relative;
-    top: 50%;
-    transform: translateY(-50%)
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 30px;
 }
 
 .homePage {
-    position: relative;
-    width: 100%;
-    height: 111vh;
-    background: url(../img/bg-test.jpg) 50% 80%;
-    background-size: cover;  
-    z-index: -1;
-}
+    background: url(../img/bg-home.jpg); 
+    height:100vh;
+    z-index: 0;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+} 
 
 .homeDiv{
     color: rgb(199, 199, 199);
@@ -41,140 +41,207 @@ body{
     letter-spacing: 5px;
     font-weight: bold;
     font-size: 50px;
-    color: #58c3ee;
-}
-
-section{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    box-sizing: border-box;
-    padding: 30px;
-}
-
-section.aboutMe{
-    background: rgb(6, 64, 112);
-    height: 40vh;
-    color: rgb(199, 199, 199);
-    z-index: -1;
-}
-
-section.aboutMe:after{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    content:'';
-    background: inherit;
-    z-index: -2;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left:0;
-    transform-origin: top right;
-    transform: skewY(2.9deg);
-}
-
-section.firstBetween{
-    position: relative;
-    width: 100%;
-    height: 40vh;
-    background: url(../img/bg-between1.jpg) 50% 45%;
-    background-size: cover;  
-    z-index: -1;
-}
-
-section.firstBetween:after{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    content:'';
-    background: inherit;
-    z-index: -1;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left:0;
-    transform-origin: top left;
-    transform: skewY(-2.9deg);
-}
-
-section.myProjects{
-    background: rgb(26, 26, 26);
-    height: 100vh;
-    color: white;
-    z-index: -1;
-}
-
-section.myProjects:after{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    content:'';
-    background: inherit;
-    z-index: -2;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left:0;
-    transform-origin: top right;
-    transform: skewY(2.9deg);
-}
-
-section.secondBetween{
-    position: relative;
-    width: 100%;
-    height: 40vh;
-    background: url(../img/bg-between2.jpg) 50% 45%;
-    background-size: cover;  
-    z-index: -1;
-}
-
-section.secondBetween:after{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    content:'';
-    background: inherit;
-    z-index: -2;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left:0;
-    transform-origin: top right;
-    transform: skewY(2.9deg);
-}
-
-section.contactMe{
-    background: rgb(26, 26, 26);
-    color: white;
-    z-index: -1;
-}
-
-section.contactMe:after{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    content:'';
-    background: inherit;
-    z-index: -2;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left:0;
-    transform-origin: top left;
-    transform: skewY(-2.9deg);
+    color: rgb(88, 195, 238);
 }
 
 footer{
-    background: rgb(12, 12, 12);
-    width: 100%;
-    height: 60px;
+    background: rgb(26, 35, 44);
+    text-align: center;
+    font-size: 14px;
+    color: rgb(245, 245, 245);
+}
+
+footer a:link, a:visited, a:hover, a:hover{
+    text-align: center;
+    font-size: 12px;
+    color: rgb(245, 245, 245);
+    text-decoration: none;
+}
+
+@media(min-width: 768px){
+    section.aboutMe{
+        background: rgb(88, 195, 238);
+        height: 40vh;
+        color: rgb(26, 35, 44);
+        font-size: 20px;
+        z-index: 0;
+    }
+    
+    .aboutMeImg{
+        height: 200px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        float: right;
+    }
+
+    section.aboutMe:after{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content:'';
+        background: inherit;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left:0;
+        transform-origin: top right;
+        transform: skewY(2.9deg);
+    }
+    
+    section.firstBetween{
+        background: url(../img/bg-home.jpg); 
+        height: 40vh;
+        width: 100%;
+        z-index: 0;
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position: center center;
+    }
+    
+    section.firstBetween:after{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content:'';
+        background: inherit;
+        z-index: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left:0;
+        transform-origin: top left;
+        transform: skewY(-2.9deg);
+    }
+    
+    section.myProjects{
+        background: rgb(88, 195, 238);
+        height: 60vh;
+        color: rgb(26, 35, 44);
+        z-index: 0;
+    }
+    
+    section.myProjects:after{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content:'';
+        background: inherit;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left:0;
+        transform-origin: top right;
+        transform: skewY(2.9deg);
+    }
+    
+    section.secondBetween{
+        background: url(../img/bg-home.jpg); 
+        height: 40vh;
+        width: 100%;
+        z-index: 0;
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position: center center;
+    }
+    
+    section.secondBetween:after{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content:'';
+        background: inherit;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left:0;
+        transform-origin: top right;
+        transform: skewY(2.9deg);
+    }
+    
+    section.contactMe{
+        background: rgb(88, 195, 238);
+        height: auto;
+        color: rgb(26, 35, 44);
+        z-index: 0;
+    }
+    
+    section.contactMe:after{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content:'';
+        background: inherit;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left:0;
+        transform-origin: top left;
+        transform: skewY(-2.9deg);
+    }
+
+    .readMore{
+        position: absolute;
+        left: calc(50% - 25px);
+        top: calc(100% - 100px);
+    }    
 }
 
 @media(max-width: 767px){
     section.aboutMe{
-        background: rgb(26, 26, 26);
-        height: 70vh;
-        color: white;
+        background: rgb(88, 195, 238);
+        height: 90%;
+        color: rgb(26, 35, 44);
+    }
+
+    .aboutMeImg{
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 15vh;
+        width: auto;
+    }
+
+    section.firstBetween{
+        position: relative;
+        width: 100%;
+        height: 63px;
+        background: url(../img/bg-home.jpg) center center;
+        background-size: cover;  
+        z-index: 0;
+    }
+
+    section.myProjects{
+        background: rgb(88, 195, 238);
+        height: auto;
+        color: rgb(26, 35, 44);
+        z-index: 0;
+    }
+
+    section.secondBetween{
+        position: relative;
+        width: 100%;
+        height: 63px;
+        background: url(../img/bg-home.jpg) center center;
+        background-size: cover;  
+        z-index: 0;
+    }
+
+    section.contactMe{
+        background: rgb(88, 195, 238);
+        color: rgb(26, 35, 44);
+        z-index: 0;
+        height: auto;
+    }
+
+    .readMore{
+        position: absolute;
+        left: calc(50% - 20px);
+        top: calc(100% - 45px);
     }
 }
